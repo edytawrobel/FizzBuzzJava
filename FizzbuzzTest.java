@@ -23,4 +23,10 @@ public class FizzbuzzTest {
     assertEquals("Fizz", result);
   }
 
+  @Test
+  public void returnsBuzzIfGivenFive() {
+    Fizzbuzz fizzbuzz = new Fizzbuzz();
+    String result = fizzbuzz.getResult(5);
+    assertEquals("Buzz", result);
+  }
 }
