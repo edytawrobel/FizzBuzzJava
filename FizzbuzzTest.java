@@ -16,5 +16,11 @@ public class FizzbuzzTest {
     assertEquals("2", result);
   }
 
+  @Test
+  public void returnsFizzIfGivenThree() {
+    Fizzbuzz fizzbuzz = new Fizzbuzz();
+    String result = fizzbuzz.getResult(3);
+    assertEquals("Fizz", result);
+  }
 
 }
